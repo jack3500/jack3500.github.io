@@ -1,0 +1,329 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: 20px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-right: 80px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+header nav ul li:hover > ul {
+    display: block;
+}
+
+header nav ul ul li {
+    width: 150px;
+    padding: 10px;
+    z-index: 2;
+}
+
+header nav ul ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    float: left;
+}
+
+
+
+.page_title{
+    text-align: center;
+    color: greenyellow;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* styles.css */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    float: right;
+}
+
+#search-box {
+    padding: 10px;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.marquee__container{
+    width: auto;
+    height: 900px;
+    text-align: center;
+    position: relative;
+}
+.marquee__container img{
+    margin-left: 5%;
+    position: absolute;
+    width: 1500px;
+    height: 900px;
+}
+.marquee__container span{
+    line-height: 400px;
+}
+
+
+.search-container a{
+    text-decoration: none;
+    position: absolute;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    width: 1670px;
+    height: 900px;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    
+    margin-bottom: 30px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 300px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    background-color: #000;
+    /*防止出现向下滚动条*/
+    
+}
+
+
+
+
+
+
+
+.marquee span{
+    color: white;
+    font-size: 25px;
+}
+
+@layer demo {
+    @keyframes marquee {
+        to {
+            translate: calc(-100% - var(--gap)) 0;
+        }
+    }
+
+    .marquee__container {
+        --gap: 1rem;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        gap: var(--gap);
+        mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+    }
+
+    .marquee {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: var(--gap);
+        min-width: 100%;
+    
+        animation: marquee 16s linear infinite running;
+    
+        .marquee__container:hover & {
+            animation-play-state: paused;
+        }
+    }
+}
+
+
+
+
+#time-container {
+    text-align: center;
+}
+
+#time-container h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+
+.mainpage1 img{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 800px;
+    float: left;
+}
+
+.mainpage1{
+    background-color: gray;
+    width: 100%;
+    height: 620px;
+    
+}
+
+.mainpage1 h1{
+    top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.mainpage1 div {
+    color: whitesmoke;
+}
+.mainpage1 div h2{
+    text-align: center;
+}
+.mainpage1 div h3{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mainpage1 a{
+    font-size: 25px;
+    color:#00bbff;
+}
+
+.mainpage_{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color:#808080;
+}
+.little_page{
+    overflow:auto;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    float: left;
+    background-color: whitesmoke;
+    margin-top: 70px;
+    margin-left: 120px;
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.little_page img{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    float: top;
+}
+.little_page div{
+    position: absolute;
+    top:300px;
+}
+
